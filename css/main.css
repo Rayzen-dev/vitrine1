@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Condensed');
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-size: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.box {
+	height: 200px;
+	background: red;
+}
+
+.container {
+	margin: 10px auto;
+	width: 75%;
+}
+
+/* HEADER */
+header {
+	font-family: 'Saira Condensed';
+}
+
+header img {
+	height: 64px;
+}
+
+header h1 {
+	margin: 0 0 0 30px;
+}
+
+nav {
+	background: #c3c3c3;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+
+nav h2 {
+	font-weight: normal;
+	margin: 0;
+	font-size: 1em;
+}
+
+nav li a {
+	padding: 7px 14px;
+	display: inline-block;
+	text-transform: uppercase;
+	color: #333;
+}
+
+nav li a:hover{
+	color: #000;
+}
