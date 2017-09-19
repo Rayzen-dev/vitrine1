@@ -75,17 +75,42 @@ nav li a:hover{
 	color: #000;
 }
 
+#menu {
+	width: 32px;
+	height: 32px;
+	border: 1px solid #555555;
+	border-radius: 10px;
+	display: none;
+	float: left;
+}
+
+#menu .bar {
+	display: block;
+	width: 50%;
+	border: 1px solid #555555;
+	margin: 6px auto;
+}
+
 /* CONTENT */
 .content {
 	font-size: 0.9em;
-	color: #777;
+	color: #666;
 }
 
 .banner {
-	height: 40%;
+	height: 50%;
 	background: #fff url('../img/background.jpeg') no-repeat fixed;
 	background-size: cover;
-	
+	display: flex;
+}
+
+.banner p {
+	font-weight: bold;
+	margin: auto;
+	font-size: 3em;
+	color: #000;
+	text-align: center;
+	width: 100%;
 }
 
 .card {
@@ -126,10 +151,71 @@ nav li a:hover{
 	color: #000;
 }
 
-@media all and (max-width: 599px){
-	nav li a {
+.btn-green {
+	color: #19ff19;
+	border-color: #19ff19;
+	background: #b2ffb2;
+}
+
+.btn-red {
+	color: #ff1919;
+	border-color: #ff1919;
+	background:  #ff9999;
+}
+
+.btn-blue {
+	color: blue;
+	border-color: blue;
+}
+
+.btn-yellow {
+	color: #ffff19;
+	border-color: #ffff19;
+	background:  #ffffb2;
+}
+
+iframe {
+	width: 100%;
+	height: auto;
+}
+
+footer {
+	text-align: center;
+	color: #000;
+	font-size: 0.75em;
+}
+
+@media all and (max-width: 599px) {
+	header {
+		border-bottom: 2px solid #c3c3c3;
+	}
+
+	#menu {
 		display: block;
+		position: absolute;
+		cursor: pointer;
+	}
+
+	nav {
+		display: none;
+	}
+
+	nav ul {
+		display: block;
+	}
+
+	nav li a {
+		padding: 7px 0;
 		width: 100%;
+		text-align: center;
+	}
+
+	h1 {
+		display: none;
+	}
+
+	header img {
+		margin: 0 auto;
 	}
 }
 @media all and (min-width: 600px) and (max-width:799px){}
